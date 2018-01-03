@@ -4,6 +4,16 @@ node 6.0+(v6.11.2)
 npm 3.0+(v3.10.10)
 ```
 
+###配置
+```html
+npm install -g create-react-app yarn
+npm config set registry https://registry.npm.taobao.org --global
+npm config set disturl https://npm.taobao.org/dist --global
+
+yarn config set registry https://registry.npm.taobao.org --global
+yarn config set disturl https://npm.taobao.org/dist --global
+```
+
 ### 项目结构
 ```html
 ```
