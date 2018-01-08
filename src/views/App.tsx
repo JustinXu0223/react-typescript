@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.less';
-const logo = require('./logo.svg');
+const logo = require('../assets/images/logo.svg');
 import { Button } from 'antd';
 
 

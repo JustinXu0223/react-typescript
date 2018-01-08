@@ -7,11 +7,6 @@ npm 3.0+(v3.10.10)
 ###配置
 ```html
 npm install -g create-react-app yarn
-npm config set registry https://registry.npm.taobao.org --global
-npm config set disturl https://npm.taobao.org/dist --global
-
-yarn config set registry https://registry.npm.taobao.org --global
-yarn config set disturl https://npm.taobao.org/dist --global
 ```
 
 ### 项目结构
@@ -22,28 +17,13 @@ yarn config set disturl https://npm.taobao.org/dist --global
 * Run 'npm install'
 
 ### 开发环境
-* Run 'npm start'
+* Run 'npm run start'
 
+### 注意安装依赖
+```html
+需要安装typeScript的版本
+npm install -S redux react-redux @types/react-redux(类似)
+```
 
-Success! Created my-app at D:\WorkSpace-Ways\my-app
-Inside that directory, you can run several commands:
-
-  yarn start
-    Starts the development server.
-
-  yarn build
-    Bundles the app into static files for production.
-
-  yarn test
-    Starts the test runner.
-
-  yarn eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
-
-We suggest that you begin by typing:
-
-  cd my-app
-  yarn start
-
-Happy hacking!
+// https://zhuanlan.zhihu.com/p/27656067
+// https://www.cnblogs.com/zhuzhenwei918/p/7249357.html
