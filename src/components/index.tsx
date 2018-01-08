@@ -4,8 +4,8 @@
  * @time 2018/1/8
  * @author jokerXu
  **/
-import HelloComponents from './Hello';
+import HelloComponent from './Hello';
 
 export {
-    HelloComponents
+    HelloComponent
 }

@@ -6,12 +6,12 @@ import './index.less';
 // import { HelloComponents } from './components';
 import { HelloContainer } from './containers';
 import { Provider } from 'react-redux';
-import Store from './store'
+import store  from './store'
 /*<App />,
 <HelloComponents name="test" enthusiasmLevel={10}/>,
 * */
 ReactDOM.render(
-    <Provider store={Store}>
+    <Provider store={store}>
         <HelloContainer />
     </Provider>,
 

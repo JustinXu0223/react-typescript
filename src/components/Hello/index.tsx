@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './index.less'
+import { Button } from 'antd';
 
 export interface Props {
     name: string;
@@ -9,11 +10,11 @@ export interface Props {
 }
 
 const getExclamationMarks=(numChars: number)=> {
-    return Array(numChars + 1).join('!');
+    return numChars + 1;
 };
 
-const HelloComponents= ({ name, enthusiasmLevel= 1, onIncrement, onDecrement }: Props)=> {
-    if (enthusiasmLevel <= 0) {
+/*const HelloComponent= ({ name, enthusiasmLevel= 1, onIncrement, onDecrement }: Props)=> {
+    if (enthusiasmLevel < 0) {
         throw new Error('You could be a little more enthusiastic. :D');
     }
 
@@ -23,11 +24,36 @@ const HelloComponents= ({ name, enthusiasmLevel= 1, onIncrement, onDecrement }: 
                 Hello {name + getExclamationMarks(enthusiasmLevel)}
             </div>
             <div>
-                <button onClick={onDecrement}>-</button>
-                <button onClick={onIncrement}>+</button>
+                <Button type="primary" onClick={onDecrement}>-</Button>
+                <Button onClick={onIncrement}>+</Button>
             </div>
         </div>
     );
 };
 
-export default HelloComponents;
+export default HelloComponent;*/
+
+export default class HelloComponent  extends React.Component<Props, {}> {
+ 	constructor(props: Props){
+ 		super(props);
+	}
+	
+	render(){
+ 		const { name, enthusiasmLevel= 1, onIncrement, onDecrement }= this.props;
+		if (enthusiasmLevel <= 0) {
+			throw new Error('You could be a little more enthusiastic. :D');
+		}
+		
+		return (
+			<div className="hello">
+				<div className="greeting">
+					Hello {name + getExclamationMarks(enthusiasmLevel)}
+				</div>
+				<div>
+					<Button type="primary" onClick={onDecrement}>-</Button>
+					<Button onClick={onIncrement}>+</Button>
+				</div>
+			</div>
+		);
+	}
+}

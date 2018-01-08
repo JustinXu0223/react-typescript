@@ -1,5 +1,5 @@
 {
-  "name": "waps-pc-ts",
+  "name": "waps-pc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,6 @@
     "@types/react-router": "^4.0.20",
     "@types/react-router-dom": "^4.2.3",
     "@types/redux": "^3.6.0",
-    "@types/redux-devtools": "^3.0.42",
     "antd": "^3.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -15,8 +14,7 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts-ts": "2.8.0",
-    "redux": "^3.7.2",
-    "redux-devtools": "^3.4.1"
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "react-app-rewired start --scripts-version react-scripts-ts",
@@ -29,13 +27,14 @@
     "@types/node": "^8.5.7",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
+    "@types/redux-devtools-extension": "^2.13.2",
     "react-app-rewire-less": "^2.1.0",
     "react-app-rewired": "^1.4.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-devtools": "^3.4.1",
+    "redux-devtools-extension": "^2.13.2",
     "ts-import-plugin": "^1.4.3"
   }
 }

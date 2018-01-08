@@ -1,4 +1,4 @@
-import { HelloComponents } from '../../components';
+import { HelloComponent } from '../../components';
 import * as Actions from '../../actions';
 import { StoreState } from '../../entity';
 import { connect, Dispatch } from 'react-redux';
@@ -11,10 +11,11 @@ import { connect, Dispatch } from 'react-redux';
  * ```mapDispatchToProps```，可以创建回调属性来使用```dispatch```函数将行为推送到我们的store。
 * */
 
-export function mapStateToProps({ enthusiasmLevel, languageName }: StoreState) {
+export function mapStateToProps( { demo: { enthusiasmLevel, languageName: name } }: StoreState) {
+	debugger;
     return {
         enthusiasmLevel,
-        name: languageName,
+        name,
     }
 }
 
@@ -32,4 +33,8 @@ export function mapDispatchToProps(dispatch: Dispatch<Actions.EnthusiasmAction>)
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HelloComponents);
+export function mergeProps(stateProps: any, dispatchProps: any, ownProps: any) {
+    return { ...ownProps, ...stateProps, ...dispatchProps};
+}
+
+export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(HelloComponent);
