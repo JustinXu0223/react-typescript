@@ -8,7 +8,7 @@ import { combineReducers } from 'redux';
 import { enthusiasm } from './demo';
 import { routerReducer } from 'react-router-redux';
 
-const rootReducer = combineReducers({
+const rootReducer= combineReducers({
 	demo: enthusiasm,
     routing: routerReducer,
 });

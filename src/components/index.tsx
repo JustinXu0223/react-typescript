@@ -5,7 +5,9 @@
  * @author jokerXu
  **/
 import HelloComponent from './Hello';
+import * as LayoutComponent from './Layout';
 
 export {
-    HelloComponent
+    HelloComponent,
+    LayoutComponent,
 }

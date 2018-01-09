@@ -5,12 +5,19 @@
  * @author jokerXu
  **/
 import * as React from 'react';
+import { Link } from 'react-router';
 import { Button } from 'antd';
 import './app.less';
 const logo = require('../assets/images/logo.svg');
 
+export interface Props {
+    children: any,
+}
 
-class App extends React.Component {
+class App extends React.Component<Props, {}> {
+    constructor(props: Props){
+        super(props);
+    }
   render() {
     return (
       <div className="App">
@@ -21,7 +28,11 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <Button type="primary">点我</Button>
+        <Button type="primary" className="link-button"><Link to="/demo">去demo</Link></Button>
+        <Button className="link-button"><Link to="/sxsd">去error</Link></Button>
+        <div>
+            {this.props.children}
+        </div>
       </div>
     );
   }

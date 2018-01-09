@@ -12,7 +12,6 @@ import { connect, Dispatch } from 'react-redux';
 * */
 
 export function mapStateToProps( { demo: { enthusiasmLevel, languageName: name } }: StoreState) {
-	debugger;
     return {
         enthusiasmLevel,
         name,

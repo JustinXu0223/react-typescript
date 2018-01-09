@@ -1,0 +1,41 @@
+// 错误页
+.error-container {
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  margin-top: -50px;
+  left: 35%;
+  margin-left: -100px;
+  width: 100%;
+
+  :global .anticon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  >p,>div{
+    float: left;
+  }
+  >p{
+    width: 400px;
+    height: 400px;
+    background: url("../../assets/images/404.svg") no-repeat center;
+  }
+  >div{
+    width: 400px;
+    padding-top: 80px;
+    >h2{
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 72px;
+      margin-bottom: 24px
+    }
+    >p{
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+  }
+}

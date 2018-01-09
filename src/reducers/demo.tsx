@@ -7,7 +7,6 @@ const initState= {
 	languageName: 'World',
 };
 export function enthusiasm(state: demo= initState, action: EnthusiasmAction): demo {
-	debugger;
     switch (action.type) {
         case Constants.INCREMENT_ENTHUSIASM:
             return {...state,

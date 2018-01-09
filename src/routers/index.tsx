@@ -9,6 +9,7 @@ import { Router,Route, IndexRoute } from 'react-router';
 
 import App from '../views/app';
 import Hello from '../views/Hello';
+import Error from '../views/Error';
 
 export interface Props {
     history: any;
@@ -17,15 +18,13 @@ export interface Props {
 const RouterConfig = ({ history }: Props)=> {
     return (
         <Router history={history}>
-            <Route path="/">
-                <IndexRoute component={Hello} />
-                <Route path="/demo">
-                    <IndexRoute component={Hello} />
-                </Route>
-                <Route path="/app">
-                    <IndexRoute component={App} />
+            <Route path="/" component={App}>
+                <IndexRoute />
+                <Route path="/demo" component={Hello} >
                 </Route>
             </Route>
+
+            <Route path="*" component={Error} />
         </Router>
     )
 };

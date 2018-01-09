@@ -29,7 +29,6 @@ $ npm install -g create-react-app yarn
   |--utils          工具
   |--views          容器视图
     |--app.less     程序入口
-    |--app.test.tsx 程序测试入口
     |--app.tsx      程序入口
   
   |--index.tsx      全局入口js
