@@ -1,18 +1,24 @@
+/**
+ * @component store
+ * @description Store配置
+ * @time 2018/1/9
+ * @author jokerXu
+ **/
 import { createStore } from 'redux';
 import rootReducer  from '../reducers';
-import { StoreState } from '../entity';
 // 利用redux-logger打印日志
 // import { createLogger } from 'redux-logger';
-
-// 安装redux-devtools-extension的可视化工具。
-import { composeWithDevTools } from 'redux-devtools-extension'
-
-// 使用日志打印方法， collapsed让action折叠，看着舒服。
+// 使用日志打印方法， collapsed让action折叠
 // const logger = createLogger({collapsed: true});
 
-const store= createStore<StoreState>(
-		rootReducer,
-		composeWithDevTools()
-	);
+// 安装redux-devtools-extension的可视化工具。
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-export default store;
+const StoreConfig=() => {
+	return createStore<any>(
+        rootReducer,
+        composeWithDevTools()
+    );
+}
+
+export default StoreConfig;

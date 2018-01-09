@@ -1,7 +1,13 @@
+/**
+ * @component App
+ * @description 布局文件
+ * @time 2018/1/9
+ * @author jokerXu
+ **/
 import * as React from 'react';
-import './App.less';
-const logo = require('../assets/images/logo.svg');
 import { Button } from 'antd';
+import './app.less';
+const logo = require('../assets/images/logo.svg');
 
 
 class App extends React.Component {

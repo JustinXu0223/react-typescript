@@ -33,7 +33,7 @@ const getExclamationMarks=(numChars: number)=> {
 
 export default HelloComponent;*/
 
-export default class HelloComponent  extends React.Component<Props, {}> {
+export default class HelloComponent extends React.Component<Props, {}> {
  	constructor(props: Props){
  		super(props);
 	}
