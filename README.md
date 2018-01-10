@@ -25,8 +25,8 @@ npm 3.0+(v3.10.10)
   |--views          容器视图
     |--Error        错误页面
     |--Hello        demo
-    |--app.less     demo页面
-    |--app.tsx      程序入口
+    |--app.less     Layout入口less
+    |--app.tsx      Layout入口
   
   |--index.tsx      全局入口js
   |--index.less     全局入口css
