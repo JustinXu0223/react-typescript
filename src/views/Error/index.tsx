@@ -1,7 +1,7 @@
 /**
  * @component Error
  * @description 错误页
- * @time 2017/11/22
+ * @time 2018/1/9
  * @author jokerXu
  **/
 import * as React from 'react';

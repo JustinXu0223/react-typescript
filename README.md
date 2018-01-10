@@ -31,7 +31,7 @@ $ npm install -g create-react-app yarn
     |--app.less     程序入口
     |--app.tsx      程序入口
   
-  |--index.tsx      全局入口js
+  |--demo.tsx      全局入口js
   |--router.tsx     全局入口路由
   
 |--config-overrides.js 覆盖create-react-app配置
@@ -52,11 +52,4 @@ $ npm install -g create-react-app yarn
 ```html
 需要安装typeScript的版本
 $ npm install -S redux react-redux @types/react-redux(类似)
-```
-
-### 参照引用
-```html
-https://zhuanlan.zhihu.com/p/27656067
-https://www.cnblogs.com/zhuzhenwei918/p/7249357.html
-https://www.cnblogs.com/baqiphp/p/7647912.html
 ```

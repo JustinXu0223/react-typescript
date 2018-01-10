@@ -1,3 +1,9 @@
+/**
+ * @component Hello
+ * @description demo组件
+ * @time 2018/1/9
+ * @author jokerXu
+ **/
 import * as React from 'react';
 import './index.less'
 import { Button } from 'antd';

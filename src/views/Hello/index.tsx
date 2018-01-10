@@ -1,5 +1,5 @@
 import { HelloComponent } from '../../components';
-import * as Actions from '../../actions';
+import * as Actions from '../../actions/demo';
 import { StoreState } from '../../entity';
 import { connect, Dispatch } from 'react-redux';
 
@@ -25,7 +25,7 @@ export function mapStateToProps( { demo: { enthusiasmLevel, languageName: name }
  * 因此我们可以创建一对可以根据需要调用调度程序的回调函数。
 * */
 
-export function mapDispatchToProps(dispatch: Dispatch<Actions.EnthusiasmAction>) {
+export function mapDispatchToProps(dispatch: Dispatch<Actions.All>) {
     return {
         onIncrement: () => dispatch(Actions.incrementEnthusiasm()),
         onDecrement: () => dispatch(Actions.decrementEnthusiasm()),

@@ -9,7 +9,7 @@ import { enthusiasm } from './demo';
 import { routerReducer } from 'react-router-redux';
 
 const rootReducer= combineReducers({
-	demo: enthusiasm,
+    demo: enthusiasm,
     routing: routerReducer,
 });
 

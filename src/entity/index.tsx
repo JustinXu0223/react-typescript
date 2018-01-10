@@ -5,7 +5,7 @@
  * @author jokerXu
  **/
 export interface demo {
-    languageName?: string;
+    languageName: string;
     enthusiasmLevel: number;
 }
 
