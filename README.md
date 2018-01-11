@@ -6,14 +6,12 @@ npm 3.0+(v3.10.10)
 
 ### 项目结构
 ```html
-|--public  此文件下打包盒测试会copy
-  |--lib         类库
-  |--images      (放页面img类似引入的图片, 页面引入就是images/**)
+|--public 
   |--index.html  全局入口
   
 |--src     源文件
   |--actions        动作
-  |--assets         静态资源(放css中使用的图片,直接相对路径引入)
+  |--assets         静态资源
   |--components     组件
   |--config         配置
   |--constants      常量
