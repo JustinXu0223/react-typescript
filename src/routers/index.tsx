@@ -5,7 +5,7 @@
  * @author jokerXu
  */
 import * as React from 'react';
-import { Router, Route, IndexRoute } from 'react-router';
+import { Router, Route, IndexRoute, Redirect } from 'react-router';
 
 import App from '../views/app';
 import Hello from '../views/Hello';
@@ -25,7 +25,7 @@ const RouterConfig = ({history}: Props) => {
       </Route>
 
       <Route path="/404" component={Error}/>
-      <Route path="*" component={Error}/>
+      <Redirect from="*" to="/404" />
     </Router>
   );
 };
