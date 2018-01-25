@@ -20,8 +20,10 @@ npm 3.0+(v3.10.10)
   |--routes         路由配置
   |--stores         store配置
   |--utils          工具
+  |--themes         less主题样式
   |--views          容器视图
     |--Error        错误页面
+    |--Hello        首页
     |--Hello        demo
     |--app.less     Layout入口less
     |--app.tsx      Layout入口
@@ -43,10 +45,13 @@ $ npm install -g  yarn
 ```
 
 ### 安装依赖
-* Run 'npm install'
+* Run 'yarn'
 
 ### 开发环境
-* Run 'npm run start'
+* Run 'yarn start'
+
+### 打包
+* Run 'yarn build'
 
 ### 注意安装依赖
 ```html

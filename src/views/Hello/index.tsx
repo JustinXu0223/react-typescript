@@ -15,7 +15,7 @@ export function mapStateToProps( { demo: { enthusiasmLevel, languageName: name }
     return {
         enthusiasmLevel,
         name,
-    }
+    };
 }
 
 /*** 请注意，```mapStateToProps```仅创建```Hello```组件期望的属性中的2个。
@@ -29,7 +29,7 @@ export function mapDispatchToProps(dispatch: Dispatch<Actions.All>) {
     return {
         onIncrement: () => dispatch(Actions.incrementEnthusiasm()),
         onDecrement: () => dispatch(Actions.decrementEnthusiasm()),
-    }
+    };
 }
 
 export function mergeProps(stateProps: any, dispatchProps: any, ownProps: any) {
