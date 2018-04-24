@@ -11,13 +11,12 @@ import rootReducer from '../reducers';
 // 使用日志打印方法， collapsed让action折叠
 // const logger = createLogger({collapsed: true});
 
-// 安装redux-devtools-extension的可视化工具。
-import { composeWithDevTools } from 'redux-devtools-extension';
+const win = window
 
 const StoreConfig = () => {
   return createStore<any>(
     rootReducer,
-    composeWithDevTools()
+    (win && win.devToolsExtension) ? win.devToolsExtension() : (f: any) => f,
   );
 };
 
