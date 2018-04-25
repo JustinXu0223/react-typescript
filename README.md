@@ -1,8 +1,11 @@
 ###版本环境
 ```html
-node 6.0+(v6.11.2)
-npm 3.0+(v3.10.10)
+node 6.0+(v8.11.1)
+npm 3.0+(v5.6.0)
 ```
+## 技术栈
+基于create-react-app 
+React+Redux+Antd
 
 ### 项目结构
 ```html
