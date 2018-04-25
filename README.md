@@ -59,5 +59,5 @@ $ npm install -g  yarn
 ### 注意安装依赖
 ```html
 需要安装typeScript的版本
-$ npm install -S redux react-redux @types/react-redux(类似)
+$ yarn add -S redux react-redux @types/react-redux(类似)
 ```
